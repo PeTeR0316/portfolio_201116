@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Archivo:wght@700&family=Nanum+Myeongjo:wght@700&family=Noto+Sans+KR:wght@100&family=Open+Sans:wght@700&family=Rubik:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Noto Sans KR", "Roboto", "Nanum Myeongjo", sans-serif;
+}
+
+ul {
+    list-style: none;
+    display: inline-block;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+div#wrap {
+    width: 100%;
+    min-width: 1340px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 14px;
+    position: relative;
+}
+
+
+/* HEADER 영역 */
+
+div#wrap>header#header {
+    width: 100%;
+    min-width: 1340px;
+    height: 60px;
+    line-height: 60px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2a3956;
+}
+
+div#wrap>header#header>img {
+    height: 30px;
+    margin-top: 15px;
+}
+
+div#wrap>header#header>ul#userMenu>li {
+    width: 120px;
+    display: inline-block;
+}
+
+div#wrap>header#header>ul#userMenu>li>a {
+    color: #596592;
+}
+
+div#wrap>header#header>ul#userMenu>li>a:hover {
+    color: #ffffff;
+}
+
+div#wrap>header#header>ul#userMenu>li>ul#quickMenu {
+    width: 120px;
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: #fff;
+}
+
+
+/* NAV 영역 */
+
+div#wrap>nav#nav {
+    width: 200px;
+    height: 950px;
+    background-color: #fff;
+    float: left;
+    clear: both;
+}
+
+div#wrap>nav#nav::after {
+    content: "";
+    clear: both;
+}
+
+div#wrap>nav#nav>ul#mainMenu {
+    width: 100%;
+}
+
+div#wrap>nav#nav>ul#mainMenu>li>a {
+    display: inline-block;
+    padding: 10px 0;
+}
+
+div#wrap>nav#nav>ul#mainMenu>li>ul {
+    width: 100%;
+    display: none;
+}
+
+div#wrap>nav#nav>ul#mainMenu>li>ul>li>a {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 0;
+    background-color: #f3f7f8;
+}
+
+
+/* MAIN 영역 */
+
+div#wrap>main#main {
+    height: 1000px;
+    margin-left: 200px;
+    background-color: #ecf0f7;
+    padding: 30px;
+    text-align: left;
+}
+
+div#wrap>main#main>div#itemList {
+    width: 900px;
+    height: 400px;
+    background-color: #ffffff;
+    padding: 30px 20px;
+}

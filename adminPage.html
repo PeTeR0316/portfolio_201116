@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style/adminPage.css">
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <title>시크헤라 관리자 페이지</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <img src="images/wrap/header/logo.png" alt="logo">
+
+            <ul id="userMenu">
+                <li>로그인</li>
+            </ul>
+        </header>
+
+        <nav id="nav">
+            <ul id="mainMenu">
+                <li>
+                    <a href="#">상품관리</a>
+                    <ul class="subMenu">
+                        <li>
+                            <a href="#">상품 조회/수정</a>
+                        </li>
+                        <li>
+                            <a href="#">상품 등록</a>
+                        </li>
+                        <li>
+                            <a href="#">상품 일괄등록</a>
+                        </li>
+                        <li>
+                            <a href="#">카탈로그 가격관리</a>
+                        </li>
+                        <li>
+                            <a href="#">연관상품 관리</a>
+                        </li>
+                        <li>
+                            <a href="#">사진 보관함</a>
+                        </li>
+                        <li>
+                            <a href="#">배송정보 관리</a>
+                        </li>
+                        <li>
+                            <a href="#">공지사항 관리</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">판매관리</a>
+                    <ul class="subMenu">
+                        <li>
+                            <a href="#">주문 조회</a>
+                        </li>
+                        <li>
+                            <a href="#">미결제 확인</a>
+                        </li>
+                        <li>
+                            <a href="#">발주/발송 관리</a>
+                        </li>
+                        <li>
+                            <a href="#">배송현황 관리</a>
+                        </li>
+                        <li>
+                            <a href="#">구매확정 내역</a>
+                        </li>
+                        <li>
+                            <a href="#">취소 관리</a>
+                        </li>
+                        <li>
+                            <a href="#">반품 관리</a>
+                        </li>
+                        <li>
+                            <a href="#">교환 관리</a>
+                        </li>
+                        <li>
+                            <a href="#">고객관리</a>
+                        </li>
+                        <li>
+                            <a href="#"></a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">정산관리</a>
+                    <ul class="subMenu">
+                        <li>
+                            <a href="#">정산 내역</a>
+                        </li>
+                        <li>
+                            <a href="#">정산 내역 상세</a>
+                        </li>
+                        <li>
+                            <a href="#">부가세신고 내역</a>
+                        </li>
+                        <li>
+                            <a href="#">세금계산서 조회</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">문의/리뷰관리</a>
+                    <ul class="subMenu">
+                        <li>
+                            <a href="#">문의 관리</a>
+                        </li>
+                        <li>
+                            <a href="#">리뷰 관리</a>
+                        </li>
+                        <li>
+                            <a href="#">리뷰이벤트 관리</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">고객혜택관리</a>
+                    <ul class="subMenu">
+                        <li>
+                            <a href="#">혜택 등록</a>
+                        </li>
+                        <li>
+                            <a href="#">혜택 조회/수정</a>
+                        </li>
+                        <li>
+                            <a href="#">혜택 리포트</a>
+                        </li>
+                        <li>
+                            <a href="#">고객등급 관리</a>
+                        </li>
+                        <li>
+                            <a href="#">포인트 지급내역 조회</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">지식재산권침해관리</a>
+                    <ul class="subMenu">
+                        <li>
+                            <a href="#">지식재산권 침해관리</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">공지사항</a>
+                    <ul class="subMenu">
+                        <li>
+                            <a href="#">공지사항</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+        <main id="main">
+            <div id="noticeBar">
+                <span id="mainMenuAnimate"></span>
+                <a href="#">최신화 시간</a>
+            </div>
+
+            <div id="monitering">
+                <div>
+                    <div class="title">주문/배송</div>
+                    <div>
+                        <div id="purchase">
+                            <div class="iconBox">
+                                <i class="fab fa-shopify fa-2x"></i>
+                            </div>
+
+                            <ul>
+                                <li>결제대기</li>
+                                <li>신규주문</li>
+                                <li>오늘출발</li>
+                                <li>예약구매</li>
+                            </ul>
+                        </div>
+
+                        <div id="delivery">
+                            <div class="iconBox">
+                                <i class="fas fa-shipping-fast fa-2x"></i>
+                            </div>
+
+                            <ul>
+                                <li>배송준비</li>
+                                <li>배송중</li>
+                                <li>배송완료</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="title">클레임/정산</div>
+                    <div>
+                        <div id="refund">
+                            <div class="iconBox">
+                                <i class="fas fa-undo-alt fa-2x"></i>
+                            </div>
+
+                            <ul>
+                                <li>취소요청</li>
+                                <li>반품요청</li>
+                                <li>교환요청</li>
+                            </ul>
+                        </div>
+
+                        <div id="adjustment">
+                            <div class="iconBox">
+                                <i class="fas fa-won-sign fa-2x"></i>
+                            </div>
+
+                            <ul>
+                                <li>구매확정</li>
+                                <li>오늘정산</li>
+                                <li>정산예정</li>
+                                <li>충전금</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="salesStats">
+                    <div class="title">매출 통계</div>
+                    <div>
+                        <button type="button" id="countChart">결제건수</button>
+                        <button type="button" id="personChart">결제자수</button>
+                        <button type="button" id="cashChart">결제금액</button>
+
+                        <!-- chart.js 또는 google chart를 사용하여 그래프 추가 -->
+                        <div id="curve_chart"></div>
+                    </div>
+                </div>
+
+                <div id="qna">
+                    <div class="title">미답변 문의</div>
+                    <div>
+                        <ul>
+                            <li>
+                                <button type="button">상품문의</button>
+                            </li>
+                            <li>
+                                <button type="button">고객문의</button>
+                            </li>
+                            <li>
+                                <button type="button">톡톡문의</button>
+                            </li>
+                        </ul>
+                        <!-- 문의 리스트 추가 -->
+                        <span>등록된 상품문의가 없습니다.</span>
+                        <br>
+                        <a href="#">문의 관리 &gt;</a>
+                    </div>
+                </div>
+                <div>
+                    <div class="title">공지사항</div>
+                    <div id="notice">
+                        <!-- 공지사항 리스트 테이블 또는 리스트로 추가 -->
+                        <table>
+                            <tr>
+                                <td>시스템</td>
+                                <td>[장애][복구완료] 상품 수정 시 오류(10/22)</td>
+                                <td>10.22.</td>
+                            </tr>
+                            <tr>
+                                <td>시스템</td>
+                                <td>[장애][복구완료] 상품 수정 시 오류(10/22)</td>
+                                <td>10.22.</td>
+                            </tr>
+                            <tr>
+                                <td>시스템</td>
+                                <td>[장애][복구완료] 상품 수정 시 오류(10/22)</td>
+                                <td>10.22.</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div id="product">
+                    <div class="title">상품</div>
+                    <div>
+                        <div>
+                            <ul>
+                                <li>
+                                    판매중 상품
+                                    <span>0 건</span>
+                                </li>
+                                <li>
+                                    수정요청 상품
+                                    <span>0 건</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>
+                                    카탈로그 가격관리 상품
+                                    <span>0 건</span>
+                                </li>
+                                <li>
+                                    카탈로그 인기상품
+                                    <span>0 건</span>
+                                </li>
+                                <li>
+                                    최저가 달성 가능 상품
+                                    <span>0 건</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="review">
+                    <div class="title">
+                        <p>리뷰<span> 최근 1주일 기준</span></p>
+                    </div>
+                    <div>
+                        <div>
+                            <ul>
+                                <li>
+                                    새로작성된 리뷰
+                                    <span>0 건</span>
+                                </li>
+                                <li>
+                                    평점 낮은 리뷰
+                                    <span>0 건</span>
+                                </li>
+                                <li>
+                                    리뷰 이벤트
+                                    <span>0 건</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <!-- 리뷰 리스트 추가 -->
+                            <span>등록된 리뷰가 없습니다.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <script src="JS/jQuery/jquery-3.5.1.min.js"></script>
+    <script src="JS/adminPage.js"></script>
+</body>
+
+</html>

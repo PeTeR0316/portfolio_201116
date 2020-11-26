@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="style/board.css">
+    <title>시크헤라 관리자 페이지</title>
+</head>
+
+<body>
+    <div id="wrap">
+        <header id="header">
+            <img src="images/wrap/header/logo.png" alt="logo">
+
+            <ul id="userMenu">
+                <li>
+                    <a href="index.html">쇼핑몰 바로가기</a>
+                </li>
+                <li>
+                    <a href="#">설정</a>
+                </li>
+                <li>
+                    <a href="#">계정(admin)</a>
+                </li>
+                <li>
+                    #
+                    <ul id="quickMenu">
+                        <!-- 마우스오버 시 슬라이드 다운-->
+                        <li>바로가기</li>
+                        <li>
+                            <a href="#">자주 묻는 질문</a>
+                        </li>
+                        <li>
+                            <a href="#">공지사항</a>
+                        </li>
+                        <li>
+                            <a href="#">1:1 문의</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </header>
+
+        <nav id="nav">
+            <ul id="mainMenu">
+                <li>
+                    <a href="#">상품관리</a>
+                    <ul class="subMenu">
+                        <li>
+                            <a href="#">상품 등록</a>
+                        </li>
+                        <li>
+                            <a href="#">상품 목록</a>
+                        </li>
+                        <li>
+                            <a href="#">상품분류 관리</a>
+                        </li>
+                        <li>
+                            <a href="#">메인진열 관리</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">주문관리</a>
+                    <ul class="subMenu">
+                        <li>
+                            <a href="#">전체주문목록</a>
+                        </li>
+                        <li>
+                            <a href="#">배송 관리</a>
+                        </li>
+                        <li>
+                            <a href="#">취소/교환/반품/환불</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">고객관리</a>
+                </li>
+                <li>
+                    <a href="#">게시판관리</a>
+                    <ul class="subMenu">
+                        <li>
+                            <a href="#">게시판 설정</a>
+                        </li>
+                        <li>
+                            <a href="#">게시판 관리</a>
+                        </li>
+                        <li>
+                            <a href="#">게시물 관리</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+
+
+        <main id="main">
+            <span class="title">게시물 관리</span>
+            <br><br>
+
+            <div id="itemList">
+                <h3>전체 게시물 목록</h3>
+                <p>
+                    [오늘 등록된 새 글 <span id="uploadCount">0</span>건] 검색결과 <span id="searchCount">0</span>건
+                </p>
+
+                <form id="uploadList">
+                    <select name="" id="sort">
+                        <option value="basic">기본정렬</option>
+                        <option value="maxView">조회수 많은 순</option>
+                    </select>
+                    <select id="viewCount">
+                        <option value="10">10개씩보기</option>
+                        <option value="20">20개씩보기</option>
+                        <option value="30">30개씩보기</option>
+                        <option value="50">50개씩보기</option>
+                        <option value="100">100개씩보기</option>
+                    </select>
+                </form>
+            </div>
+
+        </main>
+    </div>
+
+    <script src="JS/jQuery/jquery-3.5.1.min.js"></script>
+    <script src="JS/adminPage.js"></script>
+</body>
+
+</html>

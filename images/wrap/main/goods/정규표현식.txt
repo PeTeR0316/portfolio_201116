@@ -1,0 +1,25 @@
+﻿  var txt = document.getElementById("insData").value;
+            var chkReg = /[^ㄱ-ㅎ|ㅏ-ㅣ|가-힣]/;
+            if (chkReg.test(txt)) {
+                alert("한글만 입력가능");
+            } else {
+                alert("OK");
+            }
+
+
+
+var chkReg = /[^a-z|A-Z|0-9]/;
+            if (chkReg.test(txt)) {
+                alert("영어와 숫자만 입력가능");
+            } else {
+                alert("OK");
+            }
+
+
+    var txt = document.getElementById("insData").value;
+            var chkReg = /[^a-z|A-Z|0-9|_$]/;
+            if (chkReg.test(txt)) {
+                alert("영어와 숫자, 특수기호 _, $만 입력가능");
+            } else {
+                alert("OK");
+            }

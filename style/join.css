@@ -1,0 +1,244 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+.textGray {
+    color: #888888;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+div#wrap {
+    width: 70%;
+    min-width: 1340px;
+    padding-top: 60px;
+    text-align: center;
+}
+
+div#wrap>div#userInfo {
+    margin-top: 30px;
+    padding-bottom: 30px;
+}
+
+div#wrap>div#userInfo>form#joinForm>ul#userData>li {
+    width: 623px;
+    height: 50px;
+    border: 1px solid #cccccc;
+    border-top: none;
+    padding: 10px 20px;
+    text-align: left;
+    position: relative;
+}
+
+div#wrap>div#userInfo>form#joinForm>ul#userData>li:first-child {
+    border-top: 1px solid #ccc;
+}
+
+div#wrap>div#userInfo>form#joinForm>ul#userData>li>input {
+    width: 300px;
+    height: 30px;
+    border: none;
+    outline: none;
+}
+
+div#wrap>div#userInfo>form#joinForm>ul#userData>li:nth-child(n+2):nth-child(-n+4)>span {
+    font-size: 10px;
+    color: #d60000;
+    position: absolute;
+    right: 8px;
+}
+
+div#wrap>div#userInfo>form#joinForm>ul#userData>li>select {
+    width: 80px;
+    height: 30px;
+}
+
+div#wrap>div#userInfo>form#joinForm>ul#userData>li>div#genderCheckbox {
+    height: 29px;
+    line-height: 29px;
+    display: inline-block;
+    position: absolute;
+    right: 8px;
+}
+
+div#wrap>div#userInfo>form#joinForm>ul#userData>li>div#genderCheckbox>input[type="radio"] {
+    width: 15px;
+    height: 15px;
+}
+
+div#wrap>div#userInfo>form#joinForm>ul#userData>li>button {
+    width: 100px;
+    height: 34px;
+    position: absolute;
+    top: 8px;
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    right: 8px;
+    outline: none;
+}
+
+div#wrap>div#userInfo>form#joinForm>ul#userData>li>input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+}
+
+div#wrap>div#userInfo>form#joinForm>ul#userData>li>span {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 29px;
+}
+
+div#wrap>div#userInfo>form#joinForm>ul#agree {
+    margin-top: 20px;
+}
+
+div#wrap>div#userInfo>form#joinForm>ul#agree>li {
+    width: 623px;
+    border: 1px solid #cccccc;
+    border-top: none;
+    text-align: left;
+}
+
+div#wrap>div#userInfo>form#joinForm>ul#agree>li:first-child {
+    height: 50px;
+    border-top: 1px solid #ccc;
+    line-height: 50px;
+    padding: 0 20px;
+}
+
+div#wrap>div#userInfo>form#joinForm>ul#agree>li:first-child>input[type=checkbox] {
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+}
+
+div#wrap>div#userInfo>form#joinForm>ul#agree>li:first-child>span {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+div#wrap>div#userInfo>form#joinForm>ul#agree>li:nth-child(2) {
+    border: none;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+div#wrap>div#userInfo>form#joinForm>ul#agree>li:nth-child(n+2):nth-child(-n+3) {
+    padding: 0 10px;
+}
+
+div#wrap>div#userInfo>form#joinForm>ul#agree>li:nth-child(2)>ul {
+    padding: 10px 30px;
+}
+
+div#wrap>div#userInfo>form#joinForm>ul#agree>li:nth-child(2)>ul>li {
+    display: inline-block;
+}
+
+div#wrap>div#userInfo>form#joinForm>ul#agree>li:nth-child(2)>ul>li {
+    width: 49%;
+    margin: 10px 0;
+}
+
+div#wrap>div#userInfo>form#joinForm>ul#agree>li:nth-child(2)>ul>li>input[type="checkbox"] {
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+}
+
+div#wrap>div#userInfo>form#joinForm>ul#agree>li:nth-child(2)>ul>li>span {
+    line-height: 21px;
+}
+
+div#wrap>div#userInfo>form#joinForm>ul#agree>li:nth-child(2)>ul>li>button {
+    width: 80px;
+    border: 1px solid #cccccc;
+}
+
+div#wrap>div#userInfo>form#joinForm>ul#agree>li:nth-child(3)>div {
+    border-top: 1px dotted #cccccc;
+    padding: 20px 30px;
+}
+
+div#wrap>div#userInfo>form#joinForm>ul#agree>li:nth-child(3)>div>input[type=checkbox] {
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+}
+
+div#wrap>div#userInfo>form#joinForm>ul#agree>li:nth-child(3)>div>span {
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+div#wrap>div#userInfo>form#joinForm>ul#agree>li:nth-child(3)>div>span:nth-child(2) {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+div#wrap>div#userInfo>form#joinForm>ul#agree>li:nth-child(3)>div>span>input {
+    width: 15px;
+    height: 15px;
+    vertical-align: middle;
+}
+
+div#wrap>div#userInfo>form#joinForm>ul#agree>li:nth-child(3)>div>p:last-child {
+    font-weight: bold;
+    font-size: 13px;
+}
+
+div#wrap>div#userInfo>form#joinForm>button {
+    width: 250px;
+    height: 60px;
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    margin-top: 20px;
+    outline: none;
+}
+
+div#wrap>div#copyRight {
+    width: 623px;
+    border-top: 1px dotted #cccccc;
+    padding: 100px 0 50px 0;
+    font-size: 12px;
+}
+
+div#wrap>div#copyRight>ul>li {
+    display: inline-block;
+    padding: 0 15px;
+    margin: 10px 0;
+}
+
+div#wrap>div#copyRight>ul>li:first-child {
+    border-right: 2px solid #888888;
+}
+
+div#wrap>div#copyRight>ul>li:first-child>a {
+    font-weight: bold;
+}
+
+div#wrap>div#copyRight>p {
+    color: #888888;
+}
+
+div#wrap>div#copyRight>p>span {
+    font-weight: bold;
+}
